@@ -1,7 +1,7 @@
 Distributed Programming II
 Assignment n.1 partA
-Student: Antonio Tavera
-ID: 243869
+Developer: Antonio Tavera
+
 
 
 The RNS structure contains zero or more entity elements. Each of them can be a place or a vehicle object and is identified by an entityID. The entityID is unique both for places and vehicle: it cannot exist two entities with the same IDs (entityID is the key for the entities).
