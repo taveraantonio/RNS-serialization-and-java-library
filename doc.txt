@@ -1,0 +1,22 @@
+Distributed Programming II
+Assignment n.1 partA
+Student: Antonio Tavera
+ID: 243869
+
+
+The RNS structure contains zero or more entity elements. Each of them can be a place or a vehicle object and is identified by an entityID. The entityID is unique both for places and vehicle: it cannot exist two entities with the same IDs (entityID is the key for the entities).
+
+For what regards the place type, it is characterized by two attributes: an ID (a mandatory string that refers to the entityID, keyRef specified in the root) and the capacity (a mandatory non negative integer referring to the maximum number of vehicles the place can contains).
+There is also a sequence of several elements; first it is defined the connectedTo element (it allows to specify from 0 to an unbounded number of strings, that refers to places which can be connected to; this constraint is specified in the root element) and then there is a mandatory choice between one of these three specialization: a roadSegment, a parkingArea or a gate. 
+
+The roadSegment, besides the inherited entityID, is characterized by a roadSegmentName (that is a string containing only letters and/or digits) and must be part of a road, defined by its name (this one an alphanumeric string too). A roadName is unique in the system and is not possibile that a road cannot have two segment with the same roadSegmentName, so, in the root element, is specified an only one constraint that imposes the unicity of both roadName and roadSegmentName (this allows that can be different roads with the same roadSegmentName, but not a road with more than one equal roadSegmentName). 
+
+The parkingArea can have 0 or more services, each one identified by a name (a required string). For each parking area it cannot exists two or more services with the same name. This is specified by a constraint that imposes the uniqueness of serviceNames.
+
+The gateType is a restriction of a string type and is an enumeration of three possible choices: IN, OUT or INOUT.
+
+The nonNegativeInteger type is a restriction of the base integer type, it is setted to be greater than zero.
+
+The alphanumericString type is a restriction of the base string, there is a regex that allows only letters and digits. 
+
+For what regards the vehicle type, it is characterised by different required attributes: the vehicleID(represents the plateID, is a string restriction made of only uppercase letters and digits, that refers to the entityID, keyRef specified in the root), the vehicleType (is a restriction of a string type, an enumeration of four possible choices: CAR, CARAVAN, TRUCK or SHUTTLE), the vehicleState(a restriction of a string type, an enumeration of two possible choices: PARKED or IN_TRANSIT) and the entryTyme(that is a dateTime object). Each vehicle must have specified its localization; a localization type is characterized by three required attributes: where the vehicle comesFrom, where is directedTo and its current position (all of them are string referring to a placeID, keyRef in the root element).

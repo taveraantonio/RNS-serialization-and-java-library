@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="rnsInfo.xsd">
+
+ <entity entityID="Gioberti-Segment3">
+  <places>
+   <place placeID="Gioberti-Segment3" capacity="19">
+    <roadSegment roadSegmentName="Segment3">
+      <road roadName="Gioberti"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gioberti-Segment1">
+  <places>
+   <place placeID="Gioberti-Segment1" capacity="34">
+    <roadSegment roadSegmentName="Segment1">
+      <road roadName="Gioberti"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Pastrengo-Segment2">
+  <places>
+   <place placeID="Pastrengo-Segment2" capacity="42">
+    <roadSegment roadSegmentName="Segment2">
+      <road roadName="Pastrengo"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Pastrengo-Segment4">
+  <places>
+   <place placeID="Pastrengo-Segment4" capacity="15">
+    <roadSegment roadSegmentName="Segment4">
+      <road roadName="Pastrengo"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gioberti-s0">
+  <places>
+   <place placeID="Gioberti-s0" capacity="11">
+    <roadSegment roadSegmentName="s0">
+     <road roadName="Gioberti"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Pastrengo-Segment6">
+  <places>
+   <place placeID="Pastrengo-Segment6" capacity="27">
+    <roadSegment roadSegmentName="Segment6">
+      <road roadName="Pastrengo"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gioberti-Segment2">
+  <places>
+   <place placeID="Gioberti-Segment2" capacity="32">
+    <roadSegment roadSegmentName="Segment2">
+      <road roadName="Gioberti"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gioberti-Segment4">
+  <places>
+   <place placeID="Gioberti-Segment4" capacity="38">
+    <roadSegment roadSegmentName="Segment4">
+      <road roadName="Gioberti"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gioberti-Segment7">
+  <places>
+   <place placeID="Gioberti-Segment7" capacity="38">
+    <roadSegment roadSegmentName="Segment7">
+      <road roadName="Gioberti"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gioberti-Segment6">
+  <places>
+   <place placeID="Gioberti-Segment6" capacity="26">
+   <connectedTo>Gioberti-Segment1</connectedTo>
+   <connectedTo>Gioberti-Segment2</connectedTo>
+    <roadSegment roadSegmentName="Segment6">
+      <road roadName="Gioberti"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="PA001">
+  <places>
+   <place placeID="PA001" capacity="27">
+    <parkingArea>
+     <services>
+      <service serviceName="Restaurant"/>
+      <service serviceName="Toilet"/>
+      <service serviceName="PregnantParking"/>
+     </services>
+    </parkingArea>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="PA000">
+  <places>
+   <place placeID="PA000" capacity="31">
+    <parkingArea>
+     <services>
+      <service serviceName="Restaurant"/>
+     </services>
+    </parkingArea>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gate2">
+  <places>
+   <place placeID="Gate2" capacity="2">
+    <gate>INOUT</gate>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gate0">
+  <places>
+   <place placeID="Gate0" capacity="1">
+    <gate>IN</gate>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gate1">
+  <places>
+   <place placeID="Gate1" capacity="1">
+    <gate>OUT</gate>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gate4">
+  <places>
+   <place placeID="Gate4" capacity="12">
+     <connectedTo>Gioberti-Segment3</connectedTo>
+     <connectedTo>Gioberti-Segment2</connectedTo>
+     <connectedTo>Gioberti-Segment1</connectedTo>
+    <gate>IN</gate>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Gate5">
+  <places>
+   <place placeID="Gate5" capacity="12">
+     <connectedTo>Gioberti-Segment3</connectedTo>
+     <connectedTo>Gioberti-Segment2</connectedTo>
+     <connectedTo>Gioberti-Segment4</connectedTo>
+    <gate>IN</gate>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="Sacchi-Segment8">
+  <places>
+   <place placeID="Sacchi-Segment8" capacity="54">
+     <connectedTo>Sacchi-Segment8</connectedTo>
+    <roadSegment roadSegmentName="Segment8">
+     <road roadName="Sacchi"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="SanSecondo-Segment8">
+  <places>
+   <place placeID="SanSecondo-Segment8" capacity="54">
+    <roadSegment roadSegmentName="Segment8">
+     <road roadName="SanSecondo"/>
+    </roadSegment>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="PA003">
+  <places>
+   <place placeID="PA003" capacity="34">
+    <parkingArea>
+     <services>
+      <service serviceName="Restaurant"/>
+      <service serviceName="Cinema"/>
+      <service serviceName="Toilet"/>
+     </services>
+    </parkingArea>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="PA004">
+  <places>
+   <place placeID="PA004" capacity="30">
+    <parkingArea>
+     <services>
+      <service serviceName="Restaurant"/>
+     </services>
+    </parkingArea>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="PA005">
+  <places>
+   <place placeID="PA005" capacity="67">
+    <parkingArea></parkingArea>
+   </place>
+  </places>
+ </entity>
+ 
+ <entity entityID="TG133RF">
+  <vehicles>
+   <vehicle vehicleID="TG133RF" vehicleType="SHUTTLE" vehicleState="IN_TRANSIT" entryTime="2018-10-19T19:01:18+01:00">
+    <localization>
+     <comesFrom>PA004</comesFrom>
+     <directedTo>Gate0</directedTo>
+     <position>Gate0</position>
+    </localization>
+   </vehicle>
+  </vehicles>
+ </entity>
+ 
+ <entity entityID="TH112AT">
+  <vehicles>
+   <vehicle vehicleID="TH112AT" vehicleType="CAR" vehicleState="PARKED" entryTime="2018-11-16T10:19:30+01:00">
+    <localization>
+     <comesFrom>Gate0</comesFrom>
+     <directedTo>Gioberti-Segment7</directedTo>
+     <position>Gate0</position>
+    </localization>
+   </vehicle>
+  </vehicles>
+ </entity>
+ 
+ <entity entityID="DB224FG">
+  <vehicles>
+   <vehicle vehicleID="DB224FG" vehicleType="TRUCK" vehicleState="IN_TRANSIT" entryTime="2018-11-16T11:11:30+01:00">
+    <localization>
+     <comesFrom>PA000</comesFrom>
+     <directedTo>Gate1</directedTo>
+     <position>Pastrengo-Segment2</position>
+    </localization>
+   </vehicle>
+  </vehicles>
+ </entity>
+ 
+ <entity entityID="DB224FX">
+  <vehicles>
+   <vehicle vehicleID="DB224FX" vehicleType="CAR" vehicleState="PARKED" entryTime="2018-11-17T17:01:12+01:00">
+    <localization>
+     <comesFrom>Gate0</comesFrom>
+     <directedTo>Gate1</directedTo>
+     <position>Gioberti-Segment3</position>
+    </localization>
+   </vehicle>
+  </vehicles>
+ </entity>
+ 
+</Rns>
